@@ -16,18 +16,16 @@ class Car():
 	def inc_meter(self,meter):
 		self.meter = self.meter + meter
 
-audi = Car('audi','a4',2011)
-audi.get_info()
-print('current meter')
-audi.get_meter()
+#audi = Car('audi','a4',2011)
+#audi.get_info()
+#print('current meter')
+#audi.get_meter()
 
-audi.update_meter(10000)
-print('after update 10000')
-audi.get_meter()
-print('after update 500')
-audi.update_meter(500)
+#audi.update_meter(10000)
+#print('after update 10000')
+#audi.get_meter()
+#print('after update 500')
+#audi.update_meter(500)
 
 
-class ElectricalCar(Car):
-	def __init__(self,make,model,year):
-		super().__init__(make,model,year)
+
