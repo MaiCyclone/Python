@@ -27,7 +27,20 @@ audi.get_meter()
 print('after update 500')
 audi.update_meter(500)
 
-
+class Battery():
+	def __init__(self,battery_size = 70):
+		self.battery_size = battery_size
+	def get_battery(self):
+		print(self.battery_size)
+		
+		
 class ElectricalCar(Car):
 	def __init__(self,make,model,year):
 		super().__init__(make,model,year)
+		self.battery = Battery()
+
+
+tesla = ElectricalCar('tesla','Model s','2017')
+tesla.battery.get_battery()
+print(tesla.battery.battery_size)
+
